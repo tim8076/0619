@@ -8,25 +8,25 @@
 
 <div class="demo">
   <label for="basic-url" class="form-label">Your vanity URL</label>
-  <div class="練習 mb-3">
-    <span class="練習" id="basic-addon3">https://example.com/users/</span>
-    <input type="text" class="練習" id="basic-url" aria-describedby="basic-addon3">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
   </div>
 
   <div class="input-group mb-3">
-    <span class="練習">$</span>
+    <span class="input-group-text">$</span>
     <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-    <span class="練習">.00</span>
+    <span class="input-group-text">.00</span>
   </div>
 
   <div class="input-group mb-3">
     <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-    <span class="練習">@</span>
+    <span class="input-group-text">@</span>
     <input type="text" class="form-control" placeholder="Server" aria-label="Server">
   </div>
 
   <div class="input-group">
-    <span class="練習">With textarea</span>
+    <span class="input-group-text">With textarea</span>
     <textarea class="form-control" aria-label="With textarea"></textarea>
   </div>
 </div>
@@ -36,7 +36,7 @@
 <p>加入 flex-nowrap 調整換行形式</p>
 
 <div class="demo">
-  <div class="input-group 練習">
+  <div class="input-group flex-nowrap">
     <span class="input-group-text" id="addon-wrapping">@@@@@@@ @@@@@@</span>
     <input type="text" class="form-control" size="30" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
     <input type="text" class="form-control" size="30" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
@@ -59,7 +59,7 @@
 <p>使用 .input-group-{ sm, lg } 調整大小（不支援各別元素調整）</p>
 
 <div class="demo">
-  <div class="input-group 練習 mb-3">
+  <div class="input-group input-group-sm mb-3">
     <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
   </div>
@@ -69,7 +69,7 @@
     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
   </div>
     
-  <div class="input-group 練習">
+  <div class="input-group input-group-lg">
     <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
   </div>
@@ -81,15 +81,15 @@
 
 <div class="demo">
   <div class="input-group mb-3">
-    <div class="練習">
-      <input class="練習 mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+    <div class="input-group-text">
+      <input class="form-check-input  mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
     </div>
     <input type="text" class="form-control" aria-label="Text input with checkbox">
   </div>
     
   <div class="input-group">
-    <div class="練習">
-      <input class="練習 mt-0" type="radio" value="" aria-label="Radio button for following text input">
+    <div class="input-group-text">
+      <input class="form-check-input  mt-0" type="radio" value="" aria-label="Radio button for following text input">
     </div>
     <input type="text" class="form-control" aria-label="Text input with radio button">
   </div>
@@ -128,7 +128,7 @@
 
 <div class="demo">
   <div class="input-group mb-3">
-    <button class="練習" type="button" id="button-addon1">Button</button>
+    <button class="btn btn-primary" type="button" id="button-addon1">Button</button>
     <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
   </div>
     
@@ -138,8 +138,8 @@
   </div>
     
   <div class="input-group mb-3">
-    <button class="練習" type="button">Button</button>
-    <button class="練習" type="button">Button</button>
+    <button class="btn btn-primary" type="button">Button</button>
+    <button class="btn btn-primary" type="button">Button</button>
     <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
   </div>
     
@@ -156,7 +156,7 @@
 
 <div class="demo">
   <div class="input-group">
-    <button class="btn btn-outline-secondary 練習" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action before</a></li>
       <li><a class="dropdown-item" href="#">Another action before</a></li>
@@ -205,7 +205,7 @@
 <div class="demo">
   <div class="input-group mb-3">
     <label class="input-group-text" for="inputGroupSelect01">Options</label>
-    <select class="練習" id="inputGroupSelect01">
+    <select class="form-select" id="inputGroupSelect01">
       <option selected>Choose...</option>
       <option value="1">One</option>
       <option value="2">Two</option>

@@ -7,11 +7,11 @@
 <p>使用 mb-{ 1-5 } 調整表單間距</p>
 
 <div class="demo">
-  <div class="練習">
+  <div class="mb-3">
     <label for="formGroupExampleInput" class="form-label">Example label</label>
     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
   </div>
-  <div class="練習">
+  <div class="mb-3">
     <label for="formGroupExampleInput2" class="form-label">Another label</label>
     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
   </div>
@@ -22,11 +22,11 @@
 <p>使用格線系統排版表單</p>
 
 <div class="demo">
-  <div class="練習">
-    <div class="練習">
+  <div class="row">
+    <div class="col-6">
       <input type="text" class="form-control" placeholder="First name" aria-label="First name">
     </div>
-    <div class="練習">
+    <div class="col-6">
       <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
     </div>
   </div>
@@ -37,7 +37,7 @@
 <p>調整表單之間的 gutter</p>
 
 <div class="demo">
-  <div class="row 練習">
+  <div class="row gx-2">
     <div class="col">
       <input type="text" class="form-control" placeholder="First name" aria-label="First name">
     </div>
@@ -52,7 +52,7 @@
 <p>使用格線系統，並加入 g-{ 1-5 } 完成複雜的排版</p>
 
 <div class="demo">
-  <form class="row 練習">
+  <form class="row gy-3">
     <div class="col-md-6">
       <label for="inputEmail4" class="form-label">Email</label>
       <input type="email" class="form-control" id="inputEmail4">
@@ -106,7 +106,7 @@
 <div class="demo">
   <form>
     <div class="row mb-3">
-      <label for="inputEmail3" class="col-sm-2 練習">Email</label>
+      <label for="inputEmail3" class="col-sm-2  col-form-label">Email</label>
       <div class="col-sm-10">
       <input type="email" class="form-control" id="inputEmail3">
       </div>
@@ -160,7 +160,7 @@
 
 <div class="demo">
   <div class="row mb-3">
-    <label for="colFormLabelSm" class="col-sm-2 col-form-label 練習">Email</label>
+    <label for="colFormLabelSm" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
       <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
     </div>
@@ -172,7 +172,7 @@
     </div>
   </div>
   <div class="row">
-    <label for="colFormLabelLg" class="col-sm-2 col-form-label 練習">Email</label>
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
       <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
     </div>
@@ -188,10 +188,10 @@
     <div class="col-sm-7">
       <input type="text" class="form-control" placeholder="City" aria-label="City">
     </div>
-    <div class="練習">
+    <div class="col-sm-3">
       <input type="text" class="form-control" placeholder="State" aria-label="State">
     </div>
-    <div class="練習">
+    <div class="col-sm-2">
       <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
     </div>
   </div>
@@ -203,18 +203,18 @@
 
 <div class="demo">
   <form class="row gy-2 gx-3 align-items-center">
-    <div class="練習">
+    <div class="col-auto">
       <label class="visually-hidden" for="autoSizingInput">Name</label>
       <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
     </div>
-    <div class="練習">
+    <div class="col-auto">
       <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
       <div class="input-group">
       <div class="input-group-text">@</div>
       <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
       </div>
     </div>
-    <div class="練習">
+    <div class="col-auto">
       <label class="visually-hidden" for="autoSizingSelect">Preference</label>
       <select class="form-select" id="autoSizingSelect">
       <option selected>Choose...</option>
@@ -223,7 +223,7 @@
       <option value="3">Three</option>
       </select>
     </div>
-    <div class="練習">
+    <div class="col-auto">
       <div class="form-check">
       <input class="form-check-input" type="checkbox" id="autoSizingCheck">
       <label class="form-check-label" for="autoSizingCheck">
@@ -231,7 +231,7 @@
       </label>
       </div>
     </div>
-    <div class="練習">
+    <div class="col-auto">
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>
   </form>
@@ -281,7 +281,7 @@
 <p>使用 .row-cols-lg-auto 來套用水平、垂直自動切換的排版形式</p>
 
 <div class="demo">
-  <form class="row 練習 g-3 align-items-center">
+  <form class="row row-cols-lg-auto g-3 align-items-center">
     <div class="col-12">
       <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
       <div class="input-group">
