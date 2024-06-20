@@ -29,8 +29,8 @@ $theme-colors: (
 </ul>
 
 <div class="demo">
-  <div class="p-3 mb-2 練習 text-white">.bg-primary</div>
-  <div class="p-3 mb-2 練習 text-white">.bg-secondary</div>
+  <div class="p-3 mb-2 bg-primary bg-gradient text-white">.bg-primary</div>
+  <div class="p-3 mb-2 bg-secondary text-white bg-gradient">.bg-secondary</div>
   <div class="p-3 mb-2 練習 text-white">.bg-success</div>
   <div class="p-3 mb-2 練習 text-white">.bg-danger</div>
   <div class="p-3 mb-2 練習 text-dark">.bg-warning</div>
@@ -38,8 +38,8 @@ $theme-colors: (
   <div class="p-3 mb-2 練習 text-dark">.bg-light</div>
   <div class="p-3 mb-2 練習 text-white">.bg-dark</div>
   <div class="p-3 mb-2 練習 text-white">.bg-body</div>
-  <div class="p-3 mb-2 練習 text-dark">.bg-white</div>
-  <div class="p-3 mb-2 練習 text-dark">.bg-transparent</div>
+  <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+  <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
 </div>
 
 <h2>漸層色</h2>
@@ -47,9 +47,10 @@ $theme-colors: (
 <p>另外可加上 .bg-gradient 套用漸層色。<strong>注意：此功能預設不會開啟，需要調整變數才能啟用。</strong></p>
 
 <div class="demo">
+  <a href="#" class="btn btn-primary bg-gradient bg-opacity-50">123</a>
   <div class="p-3 mb-2 bg-primary 練習 text-white">.bg-primary</div>
   <div class="p-3 mb-2 bg-secondary 練習 text-white">.bg-secondary</div>
-  <div class="p-3 mb-2 bg-success 練習 text-white">.bg-success</div>
+  <div class="p-3 mb-2 bg-success bg-gradient text-white">.bg-success</div>
   <div class="p-3 mb-2 bg-danger 練習 text-white">.bg-danger</div>
   <div class="p-3 mb-2 bg-warning 練習 text-dark">.bg-warning</div>
   <div class="p-3 mb-2 bg-info 練習 text-dark">.bg-info</div>
