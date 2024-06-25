@@ -7,9 +7,9 @@
 <p>加入 text-{start, center, end}</p>
 
 <div class="demo">
-  <p class="練習">Start aligned text on all viewport sizes.</p>
-  <p class="練習">Center aligned text on all viewport sizes.</p>
-  <p class="練習">End aligned text on all viewport sizes.</p>
+  <p class="text-start">Start aligned text on all viewport sizes.</p>
+  <p class="text-center">Center aligned text on all viewport sizes.</p>
+  <p class="text-end">End aligned text on all viewport sizes.</p>
 </div>
 
 <p>中斷點示範：</p>
@@ -20,21 +20,21 @@
 </ul>
 
 <div class="demo">
-  <p class="練習">請調整此段文字的對齊</p>
+  <p class="text-center text-lg-start">請調整此段文字的對齊</p>
 </div>
 
 <h2>Text wrapping and overflow</h2>
 
 <h4>使用 <code>.text-wrap</code> 類別來斷行文字</h4>
 <div class="demo">
-  <div class="badge bg-primary 練習" style="width: 6rem;">
+  <div class="badge bg-primary text-wrap" style="width: 6rem;">
     This text should wrap.
   </div>
 </div>
 
 <h4>可搭配 <code>.text-nowrap</code> 類別防止換行</h4>
 <div class="demo">
-  <div class="練習" style="width: 8rem; background-color: rgba(86,61,124,0.15);">
+  <div class="text-nowrap" style="width: 8rem; background-color: rgba(86,61,124,0.15);">
     This text should overflow the parent.
   </div>
 </div>
@@ -42,7 +42,7 @@
 <h2>Word break</h2>
 
 <h6>使用 <code>.text-break</code> 設定 <code>word-wrap: break-word</code> 和 <code>word-break: break-word</code> 預防長文破壞元件的排版</h6>
-<div class="demo">
+<div class="text-break">
   <p class="練習">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
 </div>
 
@@ -60,12 +60,12 @@
 <p>使用 fs-{ 1-6} 來調整文字大小</p>
 
 <div class="demo">
-  <p class="練習">.fs-1 text</p>
-  <p class="練習">.fs-2 text</p>
-  <p class="練習">.fs-3 text</p>
-  <p class="練習">.fs-4 text</p>
-  <p class="練習">.fs-5 text</p>
-  <p class="練習">.fs-6 text</p>
+  <p class="fs-1">.fs-1 text</p>
+  <p class="fs-2">.fs-2 text</p>
+  <p class="fs-3">.fs-3 text</p>
+  <p class="fs-4">.fs-4 text</p>
+  <p class="fs-5">.fs-5 text</p>
+  <p class="fs-6">.fs-6 text</p>
 </div>
 
 <h2>Font weight and italics</h2>
@@ -101,7 +101,7 @@
 
 <div class="demo">
   <p class="text-muted">
-    Muted text with a <a href="#" class="練習">reset link</a>.
+    Muted text with a <a href="#" class="text-reset">reset link</a>.
   </p>
 </div>
 
@@ -110,9 +110,9 @@
 <p>加入 .text-decoration-{ underline, line-through, none } 改變文字裝飾。</p>
 
 <div class="demo">
-  <p class="練習">This text has a line underneath it.</p>
-  <p class="練習">This text has a line going through it.</p>
-  <a href="#" class="練習">This link has its text decoration removed</a>
+  <p class="text-decoration-underline">This text has a line underneath it.</p>
+  <p class="text-decoration-line-through">This text has a line going through it.</p>
+  <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
 </div>
 <!-- 🙇🙇練習結束🙇🙇 -->
 </main>
