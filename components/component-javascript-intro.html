@@ -12,7 +12,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-bs-toggle="modal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -56,15 +56,13 @@
 </div>
 
 <script>
-
-  // (() => {
-  //   const myModal = new bootstrap.Modal(document.getElementById('sampleModal'));
-  //   const btn = document.querySelector('#myBtn');
-
-  //   btn.addEventListener('click', () => {
-  //     myModal.show();
-  //   });
-  // })();
+  (() => {
+     const myModal = new bootstrap.Modal(document.getElementById('sampleModal'));
+     const btn = document.querySelector('#myBtn');
+     btn.addEventListener('click', () => {
+       myModal.show();
+    });
+  })();
 </script>
 <!-- 🙇🙇練習結束🙇🙇 -->
 </main>

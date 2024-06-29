@@ -44,7 +44,8 @@
 </ol>
 
 <div class="demo">
-  <button type="button" class="btn btn-primary" 練習>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
     Launch demo modal
   </button>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -52,13 +53,13 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" 練習 aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
         <div class="modal-body">
           ...
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" 練習>Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
@@ -73,7 +74,7 @@
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     Launch static backdrop modal
   </button>
-  <div class="modal fade" id="staticBackdrop" 練習 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -99,7 +100,7 @@
     Launch demo modal
   </button>
   <div class="modal fade" id="longModal" tabindex="-1" aria-labelledby="longModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="longModalLabel">Modal title</h5>
@@ -153,7 +154,7 @@
     Vertically centered modal
   </button>
   <div class="modal fade" id="centerModal" tabindex="-1" aria-labelledby="centerModalLabel" aria-hidden="true">
-    <div class="modal-dialog 練習">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="centerModalLabel">Modal title</h5>
@@ -174,7 +175,7 @@
     Vertically centered scrollable modal
   </button>
   <div class="modal fade" id="centerScrollModal" tabindex="-1" aria-labelledby="centerScrollModalLabel" aria-hidden="true">
-    <div class="modal-dialog 練習 modal-dialog-scrollable">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="centerScrollModalLabel">Modal title</h5>
@@ -248,7 +249,7 @@
 
   <!-- Extra large modal -->
   <div class="modal fade" id="xlSizeModal" tabindex="-1" aria-labelledby="xlSizeModalLabel" aria-hidden="true">
-    <div class="modal-dialog 練習">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="xlSizeModalLabel">Extra large modal</h5>
@@ -276,7 +277,7 @@
 
   <!-- Full screen -->
   <div class="modal fade" id="fullModal" tabindex="-1" aria-labelledby="fullModalLabel" aria-hidden="true">
-    <div class="modal-dialog 練習">
+    <div class="modal-dialog modal-fullscreen-md-down">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="fullModalLabel">Full screen</h5>

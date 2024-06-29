@@ -13,12 +13,12 @@
 </ul>
 
 <div class="demo">
-  <ul class="練習">
-    <li class="練習">
-      <a class="練習 active" aria-current="page" href="#">Active</a>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
     </li>
-    <li class="練習">
-      <a class="練習" href="#">Link</a>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Link</a>
@@ -35,10 +35,10 @@
 
 <div class="demo">
   <nav class="nav">
-    <a class="練習 active" aria-current="page" href="#">Active</a>
-    <a class="練習" href="#">Link</a>
-    <a class="練習" href="#">Link</a>
-    <a class="練習 disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </nav>
 </div>
 
@@ -48,7 +48,7 @@
 <p>使用 <code>.justify-content-center</code> 置中對齊:</p>
 
 <div class="demo">
-  <ul class="nav 練習">
+  <ul class="nav justify-content-center">
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="#">Active</a>
     </li>
@@ -67,7 +67,7 @@
 <p>使用 <code>.justify-content-end</code> 靠右對齊:</p>
 
 <div class="demo">
-  <ul class="nav 練習">
+  <ul class="nav justify-content-end">
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="#">Active</a>
     </li>
@@ -88,7 +88,7 @@
 <p>通過使用 <code>.flex-column</code> 通用類別更改 flex 的軸線方向以堆疊導覽</p>
 
 <div class="demo">
-  <ul class="nav 練習">
+  <ul class="nav flex-column">
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="#">Active</a>
     </li>
@@ -108,7 +108,7 @@
 <p>加入 <code>.nav-tabs</code> 以生成具有分頁標籤的介面</p>
 
 <div class="demo">
-  <ul class="nav 練習">
+  <ul class="nav nav-tabs">
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="#">Active</a>
     </li>
@@ -127,7 +127,7 @@
 <h4>Pills</h4>
 
 <div class="demo">
-  <ul class="nav 練習">
+  <ul class="nav nav-pills">
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="#">Active</a>
     </li>
@@ -147,7 +147,7 @@
 <p>使用 <code>.nav-fill</code> 會將 <code>.nav-item</code> 內容按照比例分配空間。注意，這會佔用所有的水平空間，但並不是每個導覽項目都具有相同寬度</p>
 
 <div class="demo">
-  <ul class="nav nav-pills 練習">
+  <ul class="nav nav-pills nav-fill">
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="#">Active</a>
     </li>
@@ -166,7 +166,7 @@
 <p>使用 <code>&lt;nav&gt;</code> 導覽時，您可以忽略 <code>.nav-item</code>，因為客製化 <code>&lt;a&gt;</code> 元素的樣式僅需要 <code>.nav-link</code></p>
 
 <div class="demo">
-  <nav class="nav nav-pills 練習">
+  <nav class="nav nav-pills nav-fill">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
     <a class="nav-link" href="#">Much longer nav link</a>
     <a class="nav-link" href="#">Link</a>
@@ -177,7 +177,7 @@
 <p>創建等寬元素請使用 <code>.nav-justified</code>。所有的水平空間將被導覽連結佔據，但與上面的 <code>.nav-fill</code> 不同，每個導覽項都將是相同的寬度</p>
 
 <div class="demo">
-  <ul class="nav nav-pills 練習">
+  <ul class="nav nav-pills nav-justified">
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="#">Active</a>
     </li>
@@ -202,7 +202,7 @@
 </ul>
 
 <div class="demo">
-  <nav class="nav nav-pills 練習">
+  <nav class="nav nav-pills flex-column flex-sm-row">
     <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
     <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
     <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
@@ -222,7 +222,7 @@
       <a class="nav-link active" aria-current="page" href="#">Active</a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" 練習 href="#" role="button" aria-expanded="false">Dropdown</a>
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#">Action</a></li>
         <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -279,19 +279,19 @@
 <div class="demo">
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="home-tab" 練習 type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab"  data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="profile-tab" 練習 type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="contact-tab" 練習 type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
     </li>
   </ul>
-  <div class="練習" id="myTabContent">
-    <div class="練習" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-    <div class="練習" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-    <div class="練習" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+  <div class="nav-tabs" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...A</div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...B</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...C</div>
   </div>
 </div>
 <!-- 🙇🙇練習結束🙇🙇 -->

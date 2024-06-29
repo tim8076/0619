@@ -7,19 +7,19 @@
 <p>標籤可以運用在標題上</p>
 
 <div class="demo">
-  <h1>Example heading <span class="練習 bg-secondary">New</span></h1>
-  <h2>Example heading <span class="練習 bg-secondary">New</span></h2>
-  <h3>Example heading <span class="練習 bg-secondary">New</span></h3>
-  <h4>Example heading <span class="練習 bg-secondary">New</span></h4>
-  <h5>Example heading <span class="練習 bg-secondary">New</span></h5>
-  <h6>Example heading <span class="練習 bg-secondary">New</span></h6>
+  <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+  <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+  <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+  <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+  <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+  <h6>Example heading <span class="badge bg-secondary">New</span></h6>
 </div>
 
 <h4>標籤可以作為連結或按鈕的一部分</h4>
 
 <div class="demo">
   <button type="button" class="btn btn-primary">
-    Notifications <span class="練習 bg-secondary">4</span>
+    Notifications <span class="badge bg-secondary">4</span>
   </button>
 </div>
 
@@ -29,10 +29,10 @@
 <p>可以使用 bg-{情境色} 來調整 badge 的色彩，必要時可加入 text-dark 將文字改為深色</p>
 
 <div class="demo">
-  <span class="badge 練習">Primary</span>
-  <span class="badge 練習">Secondary</span>
-  <span class="badge 練習">Success</span>
-  <span class="badge 練習">Danger</span>
+  <span class="badge bg-primary">Primary</span>
+  <span class="badge bg-secondary">Secondary</span>
+  <span class="badge bg-success">Success</span>
+  <span class="badge bg-danger">Danger</span>
   <span class="badge bg-warning text-dark">Warning</span>
   <span class="badge bg-info text-dark">Info</span>
   <span class="badge bg-light text-dark">Light</span>
@@ -43,14 +43,14 @@
 <h6>使用 <code>.rounded-pill</code> 通用類別可以透過 <code>border-radius</code> 使標籤增加圓角。</h6>
 
 <div class="demo">
-  <span class="badge 練習 bg-primary">Primary</span>
-  <span class="badge 練習 bg-secondary">Secondary</span>
-  <span class="badge 練習 bg-success">Success</span>
-  <span class="badge 練習 bg-danger">Danger</span>
-  <span class="badge 練習 bg-warning text-dark">Warning</span>
-  <span class="badge 練習 bg-info text-dark">Info</span>
-  <span class="badge 練習 bg-light text-dark">Light</span>
-  <span class="badge 練習 bg-dark">Dark</span>
+  <span class="badge rounded-pill bg-primary">Primary</span>
+  <span class="badge rounded-pill bg-secondary">Secondary</span>
+  <span class="badge rounded-pill bg-success">Success</span>
+  <span class="badge rounded-pill bg-danger">Danger</span>
+  <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+  <span class="badge rounded-pill bg-info text-dark">Info</span>
+  <span class="badge rounded-pill bg-light text-dark">Light</span>
+  <span class="badge rounded-pill bg-dark">Dark</span>
 </div>
 
 <h2>定位技巧</h2>
@@ -63,9 +63,9 @@
 </ul>
 
 <div class="demo">
-  <button type="button" class="btn btn-primary 練習">
+  <button type="button" class="btn btn-primary position-relative">
     Inbox
-    <span class="練習">
+    <span class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">
       99+
       <span class="visually-hidden">unread messages</span>
     </span>
