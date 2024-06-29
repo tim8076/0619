@@ -15,11 +15,11 @@
 </ul>
 
 <div class="demo">
-  <div class="練習">
-    <button class="btn btn-secondary 練習" type="button" id="dropdownMenuButton1" 練習 aria-expanded="false">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
       Dropdown button
     </button>
-    <ul class="練習" aria-labelledby="dropdownMenuButton1">
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
       <li><a class="dropdown-item" href="#">Action</a></li>
       <li><a class="dropdown-item" href="#">Another action</a></li>
       <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -30,12 +30,12 @@
 <p>透過 <code>&lt;a&gt;</code>：</p>
 
 <div class="demo">
-  <div class="練習">
-    <a class="btn btn-secondary 練習" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+  <div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
       Dropdown link
     </a>
     
-    <ul class="練習" aria-labelledby="dropdownMenuLink">
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
       <li><a class="dropdown-item" href="#">Action</a></li>
       <li><a class="dropdown-item" href="#">Another action</a></li>
       <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -49,7 +49,7 @@
 
 <div class="demo">
   <div class="dropdown">
-    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="btn btn-secondary btn-lg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
       Dropdown link
     </a>
     
@@ -67,7 +67,7 @@
 <div class="demo">
   <div class="btn-group">
     <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-primary dropdown-toggle 練習" data-bs-toggle="dropdown" aria-expanded="false">
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
@@ -80,7 +80,7 @@
   </div>
   <div class="btn-group">
     <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-secondary dropdown-toggle 練習" data-bs-toggle="dropdown" aria-expanded="false">
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
@@ -93,7 +93,7 @@
   </div>
   <div class="btn-group">
     <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-success dropdown-toggle 練習" data-bs-toggle="dropdown" aria-expanded="false">
+    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
@@ -106,7 +106,7 @@
   </div>
   <div class="btn-group">
     <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-info dropdown-toggle 練習" data-bs-toggle="dropdown" aria-expanded="false">
+    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
@@ -119,7 +119,7 @@
   </div>
   <div class="btn-group">
     <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-warning dropdown-toggle 練習" data-bs-toggle="dropdown" aria-expanded="false">
+    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
@@ -140,7 +140,7 @@
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
       Dropdown button
     </button>
-    <ul class="dropdown-menu 練習" aria-labelledby="dropdownMenuButton2">
+    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
       <li><a class="dropdown-item active" href="#">Action</a></li>
       <li><a class="dropdown-item" href="#">Another action</a></li>
       <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -156,7 +156,7 @@
 <p>可以加上 dropup, dropend, dropstart 改變方向性</p>
 
 <div class="demo">
-  <div class="btn-group 練習">
+  <div class="btn-group dropup">
     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
       改變指向方向
     </button>
@@ -168,7 +168,7 @@
       <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
   </div>
-  <div class="btn-group 練習">
+  <div class="btn-group dropstart">
     <button type="button" class="btn btn-secondary">
       Split dropup
     </button>
@@ -194,9 +194,9 @@
       Dropdown
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-      <li><練習 class="dropdown-item" type="button">Action</練習></li>
-      <li><練習 class="dropdown-item" type="button">Another action</練習></li>
-      <li><練習 class="dropdown-item" type="button">Something else here</練習></li>
+      <li><button class="dropdown-item" type="button">Action</button></li>
+      <li><button class="dropdown-item" type="button">Another action</button></li>
+      <li><button class="dropdown-item" type="button">Something else here</button></li>
     </ul>
   </div>
 </div>
@@ -205,7 +205,7 @@
 
 <div class="demo">
   <ul class="dropdown-menu" style="display: block; position: initial;">
-    <li><span class="練習">Dropdown item text</span></li>
+    <li><span class="dropdown-item-text">Dropdown item text</span></li>
     <li><a class="dropdown-item" href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
     <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -217,7 +217,7 @@
 <div class="demo">
   <ul class="dropdown-menu" style="display: block; position: initial;">
     <li><a class="dropdown-item" href="#">Regular link</a></li>
-    <li><a class="dropdown-item 練習" href="#" aria-current="true">Active link</a></li>
+    <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
     <li><a class="dropdown-item" href="#">Another link</a></li>
   </ul>
 </div>
@@ -227,7 +227,7 @@
 <div class="demo">
   <ul class="dropdown-menu" style="display: block; position: initial;">
     <li><a class="dropdown-item" href="#">Regular link</a></li>
-    <li><a class="dropdown-item 練習" href="#" tabindex="-1" aria-disabled="true">Disabled link</a></li>
+    <li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Disabled link</a></li>
     <li><a class="dropdown-item" href="#">Another link</a></li>
   </ul>
 </div>
@@ -240,7 +240,7 @@
     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
       Right-aligned menu example
     </button>
-    <ul class="dropdown-menu 練習">
+    <ul class="dropdown-menu dropdown-menu-end">
       <li><button class="dropdown-item" type="button">Action</button></li>
       <li><button class="dropdown-item" type="button">Another action</button></li>
       <li><button class="dropdown-item" type="button">Something else here</button></li>
@@ -363,7 +363,7 @@
 
 <div class="demo">
   <ul class="dropdown-menu" style="display: block; position: initial;">
-    <li><p class="練習">Dropdown header</p></li>
+    <li><p class="dropdown-header">Dropdown header</p></li>
     <li><a class="dropdown-item" href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
   </ul>
@@ -378,7 +378,7 @@
     <li><a class="dropdown-item" href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
     <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><練習 class="練習"></li>
+    <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
 </div>

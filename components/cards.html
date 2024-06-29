@@ -8,7 +8,7 @@
 
 <div class="demo">
   <!-- .card -->
-  <div class="練習" style="width: 18rem;">
+  <div class="card" style="width: 18rem;">
     <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -24,7 +24,7 @@
 
 <div class="demo">
   <div class="card">
-    <div class="練習">
+    <div class="card-body">
       This is some text within a card body.
     </div>
   </div>
@@ -36,11 +36,11 @@
 <div class="demo">
   <div class="card" style="width: 18rem;">
     <div class="card-body">
-      <h5 class="練習">Card title</h5>
-      <h6 class="練習 mb-2 text-muted">Card subtitle</h6>
+      <h5 class="card-title">Card title</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="練習">Card link</a>
-      <a href="#" class="練習">Another link</a>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
     </div>
   </div>
 </div>
@@ -50,9 +50,9 @@
 
 <div class="demo">
   <div class="card" style="width: 18rem;">
-    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" class="練習" alt="...">
+    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" class="card-img-top" alt="...">
     <div class="card-body">
-      <p class="練習">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
 </div>
@@ -62,7 +62,7 @@
 
 <div class="demo">
   <div class="card" style="width: 18rem;">
-    <ul class="list-group 練習">
+    <ul class="list-group list-group-flush">
       <li class="list-group-item">An item</li>
       <li class="list-group-item">A second item</li>
       <li class="list-group-item">A third item</li>
@@ -112,7 +112,7 @@
 
 <div class="demo">
   <div class="card">
-    <div class="練習">
+    <div class="card-header">
       Featured
     </div>
     <div class="card-body">
@@ -127,7 +127,7 @@
 
 <div class="demo">
   <div class="card">
-    <練習 class="card-header">Featured</練習>
+    <h5 class="card-header">Featured</h5>
     <div class="card-body">
       <h5 class="card-title">Special title treatment</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -140,7 +140,7 @@
 
 <div class="demo">
   <div class="card text-center">
-    <div class="練習">
+    <div class="card-header">
       Featured
     </div>
     <div class="card-body">
@@ -148,7 +148,7 @@
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-    <div class="練習 text-muted">
+    <div class="card-footer text-muted">
       2 days ago
     </div>
   </div>
@@ -160,22 +160,29 @@
 <p>搭配格線系統安排卡片排版</p>
 
 <div class="demo">
-  
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </div>
   </div>
+ 
 
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+  
 
 </div>
 
@@ -184,7 +191,7 @@
 <p>使用 utilities w-* 限制卡片寬度</p>
 
 <div class="demo">
-  <div class="card 練習">
+  <div class="card w-50">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -192,7 +199,7 @@
     </div>
   </div>
   
-  <div class="card 練習">
+  <div class="card w-25">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -206,7 +213,7 @@
 <p>直接使用 style 限制寬度也是沒問題的</p>
 
 <div class="demo">
-  <div class="card" 練習>
+  <div class="card" style="width: 400px;">
     <div class="card-body">
       <h5 class="card-title">Special title treatment</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -220,7 +227,7 @@
 <p>使用 utilities 調整卡片內文字對齊</p>
 
 <div class="demo">
-  <div class="card 練習" style="width: 18rem;">
+  <div class="card text-center" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Special title treatment</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -239,7 +246,7 @@
   <div class="card text-center">
     <div class="card-header">
       <!-- 加入 card-header-tabs -->
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
           <a class="nav-link active" aria-current="true" href="#">Active</a>
         </li>
@@ -263,7 +270,7 @@
   <div class="card text-center">
     <div class="card-header">
       <!-- card-header-pills -->
-      <ul class="nav nav-pills">
+      <ul class="nav nav-pills card-header-pills">
         <li class="nav-item">
           <a class="nav-link active" href="#">Active</a>
         </li>
@@ -291,7 +298,7 @@
 
 <div class="demo">
   <div class="card mb-3">
-    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" height="270" style="object-fit: cover;" class="練習" alt="...">
+    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" height="270" style="object-fit: cover;" class="card-img-top" alt="...">
     <!-- object-fit: cover; 是圖片的顯示屬性 -->
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -305,7 +312,7 @@
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
-    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" height="270" style="object-fit: cover;" class="練習" alt="...">
+    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" height="270" style="object-fit: cover;" class="card-img-bottom" alt="...">
   </div>
 </div>
 
@@ -315,8 +322,8 @@
 
 <div class="demo">
   <div class="card bg-dark text-white">
-    <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" height="270" style="object-fit: cover;" class="練習" alt="...">
-    <div class="練習">
+    <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" height="270" style="object-fit: cover;" class="card-img" alt="...">
+    <div class="card-img-overlay">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       <p class="card-text">Last updated 3 mins ago</p>
@@ -330,11 +337,11 @@
 
 <div class="demo">
   <div class="card mb-3" style="max-width: 540px;">
-    <div class="練習">
-      <div class="練習">
+    <div class="row g-0">
+      <div class="col-4">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="...">
       </div>
-      <div class="練習">
+      <div class="col-8">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -352,14 +359,14 @@
 <p>使用 bg-{情境色} 製作不同顏色的卡片</p>
 
 <div class="demo">
-  <div class="card 練習 mb-3" style="max-width: 18rem;">
+  <div class="card bg-primary text-white mb-3" style="max-width: 18rem;">
     <div class="card-header">Header</div>
     <div class="card-body">
       <h5 class="card-title">Primary card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
-  <div class="card 練習 mb-3" style="max-width: 18rem;">
+  <div class="card bg-dark text-white mb-3" style="max-width: 18rem;">
     <div class="card-header">Header</div>
     <div class="card-body">
       <h5 class="card-title">Secondary card title</h5>
@@ -373,14 +380,14 @@
 <p>使用 border-{情境色} 製作不同邊框色彩的卡片</p>
 
 <div class="demo">
-  <div class="card 練習 mb-3" style="max-width: 18rem;">
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
     <div class="card-header">Header</div>
     <div class="card-body text-primary">
       <h5 class="card-title">Primary card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
-  <div class="card 練習 mb-3" style="max-width: 18rem;">
+  <div class="card border-secondary mb-3" style="max-width: 18rem;">
     <div class="card-header">Header</div>
     <div class="card-body text-secondary">
       <h5 class="card-title">Secondary card title</h5>
@@ -392,7 +399,7 @@
 <h4>Mixins utilities</h4>
 
 <div class="demo">
-  <div class="card border-success mb-3" style="max-width: 18rem;">
+  <div class="card border-success text-sucess mb-3" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success">Header</div>
     <div class="card-body text-success">
       <h5 class="card-title">Success card title</h5>
@@ -410,7 +417,7 @@
 <p>加入 .card-group 製作群組卡片</p>
 
 <div class="demo">
-  <div class="練習">
+  <div class="card-group">
     <div class="card">
       <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
       <div class="card-body">
@@ -448,7 +455,7 @@
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
-      <div class="練習">
+      <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
@@ -458,7 +465,7 @@
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
       </div>
-      <div class="練習">
+      <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
@@ -468,7 +475,7 @@
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
       </div>
-      <div class="練習">
+      <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
@@ -485,9 +492,9 @@
 </ul>
 
 <div class="demo">
-  <div class="row 練習">
+  <div class="row row-cols-1 row-cols-lg-2 g-4">
     <div class="col">
-      <div class="card">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -496,7 +503,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="card">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -505,7 +512,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="card">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -514,7 +521,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="card">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -530,7 +537,7 @@
 <div class="demo">
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
-      <div class="card 練習">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -539,7 +546,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="card 練習">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -548,7 +555,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="card 練習">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -557,7 +564,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="card 練習">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>

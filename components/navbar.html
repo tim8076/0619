@@ -74,13 +74,13 @@
   <!-- As a link -->
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <a class="練習" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Navbar</a>
     </div>
   </nav>
   <!-- As a heading -->
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <span class="練習 mb-0 h1">Navbar</span>
+      <span class="navbar-brand mb-0 h1">Navbar</span>
     </div>
   </nav>
 </div>
@@ -118,12 +118,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="練習">
-          <li class="練習">
-            <a class="練習 active" aria-current="page" href="#">Home</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="練習">
-            <a class="練習" href="#">Features</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
@@ -149,9 +149,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="練習">
-          <a class="練習 active" aria-current="page" href="#">Home</a>
-          <a class="練習" href="#">Features</a>
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
           <a class="nav-link" href="#">Pricing</a>
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </div>
@@ -183,7 +183,8 @@
             <a class="nav-link" href="#">Pricing</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 練習 aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown link
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -206,12 +207,12 @@
 
 <div class="demo">
   <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container-fluid justify-content-start ">
       <a class="navbar-brand">Navbar</a>
-      <!-- <form class="d-flex">
+      <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
+      </form>
     </div>
   </nav>
 </div>
@@ -235,7 +236,7 @@
 <div class="demo">
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <span class="練習">
+      <span class="navbar-text">
         Navbar text with an inline element
       </span>
     </div>
@@ -246,7 +247,7 @@
 <p>從 <code>.navbar-light</code> 選用淺色背景顏色，或者 <code>.navbar-dark</code> 用於深色背景顏色。 然後，使用 <code>.bg-*</code> 通用類別自訂</p>
 
 <div class="demo">
-  <nav class="navbar navbar-expand-lg 練習 bg-dark mb-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBgdark" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -276,7 +277,7 @@
   </nav>
   
   <!-- 為以下範例套用 bg-primary -->
-  <nav class="navbar navbar-expand-lg  練習 bg-primary mb-3">
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-primary mb-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBgprimary" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -306,7 +307,7 @@
   </nav>
   
   <!-- 為以下範例套用 style="background-color: #e3f2fd;" -->
-  <nav class="navbar navbar-expand-lg  navbar-light" 練習>
+  <nav class="navbar navbar-expand-lg  navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBglight" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -383,7 +384,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" 練習>
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -424,7 +425,7 @@
 <p>在以下程式碼中加入 .navbar-expand-lg，.navbar-collapse 將會在 lg 以上尺寸展開</p>
 
 <div class="demo">
-  <nav class="navbar 練習 navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

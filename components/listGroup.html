@@ -10,12 +10,12 @@
 </ul>
 
 <div class="demo">
-  <ul class="練習">
-    <li class="練習">An item</li>
-    <li class="練習">A second item</li>
-    <li class="練習">A third item</li>
-    <li class="練習">A fourth item</li>
-    <li class="練習">And a fifth one</li>
+  <ul class="list-group">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
   </ul>
 </div>
 
@@ -25,7 +25,7 @@
 
 <div class="demo">
   <ul class="list-group">
-    <li class="list-group-item 練習" aria-current="true">An active item</li>
+    <li class="list-group-item active" aria-current="true">An active item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
     <li class="list-group-item">A fourth item</li>
@@ -39,7 +39,7 @@
 
 <div class="demo">
   <ul class="list-group">
-    <li class="list-group-item 練習" aria-disabled="true">A disabled item</li>
+    <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
     <li class="list-group-item">A fourth item</li>
@@ -55,10 +55,10 @@
 
 <div class="demo">
   <div class="list-group">
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
+    <a href="#" class="list-group-item list-group-item-action">A second item</a>
+    <a href="#" class="list-group-item list-group-item-action">A third item</a>
+    <a href="#" class="list-group-item list-group-item-action">A fourth item</a>
+    <a href="#" class="list-group-item list-group-item-action">And a fifth one</a>
   </div>
 </div>
 
@@ -81,7 +81,7 @@
 <p>使用 .list-group-flush 取消外框視覺效果</p>
 
 <div class="demo">
-  <ul class="list-group 練習">
+  <ul class="list-group list-group-flush">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
@@ -95,7 +95,7 @@
 <p>使用 ol 標籤搭配 .list-group-numbered 為項目加上數值</p>
 
 <div class="demo">
-  <ol class="list-group 練習">
+  <ol class="list-group list-group-numbered">
     <li class="list-group-item">Cras justo odio</li>
     <li class="list-group-item">Cras justo odio</li>
     <li class="list-group-item">Cras justo odio</li>
@@ -135,12 +135,12 @@
 <p>使用 list-group-horizontal 及 list-group-horizontal-{中斷點} 將項目改為水平排列</p>
 
 <div class="demo">
-  <ul class="list-group 練習">
+  <ul class="list-group list-group-horizontal">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
   </ul>
-  <ul class="list-group 練習">
+  <ul class="list-group list-group-horizontal-lg">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
@@ -154,11 +154,11 @@
 <div class="demo">
   <ul class="list-group">
     <li class="list-group-item">A simple default list group item</li>
-    <li class="list-group-item 練習">A simple primary list group item</li>
+    <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
     <li class="list-group-item 練習">A simple secondary list group item</li>
     <li class="list-group-item 練習">A simple success list group item</li>
     <li class="list-group-item 練習">A simple danger list group item</li>
-    <li class="list-group-item 練習">A simple warning list group item</li>
+    <li class="list-group-item list-group-item-info">A simple warning list group item</li>
     <li class="list-group-item 練習">A simple info list group item</li>
     <li class="list-group-item 練習">A simple light list group item</li>
     <li class="list-group-item 練習">A simple dark list group item</li>
@@ -188,7 +188,7 @@
 
 <div class="demo">
   <ul class="list-group">
-    <li class="list-group-item 練習">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
       A list item
       <span class="badge bg-primary rounded-pill">14</span>
     </li>

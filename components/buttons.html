@@ -7,14 +7,14 @@
 <p>按鈕結構包含 btn 加上 btn-{情境色}</p>
 
 <div class="demo">
-  <button type="button" class="練習">Primary</button>
-  <button type="button" class="練習">Secondary</button>
-  <button type="button" class="練習">Success</button>
-  <button type="button" class="練習">Danger</button>
-  <button type="button" class="練習">Warning</button>
-  <button type="button" class="練習">Info</button>
-  <button type="button" class="練習">Light</button>
-  <button type="button" class="練習">Dark</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-primary">Secondary</button>
+  <button type="button" class="btn btn-primary">Success</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-primary">Info</button>
+  <button type="button" class="btn btn-primary">Light</button>
+  <button type="button" class="btn btn-primary">Dark</button>
 
   <!-- btn-link 是具有按鈕尺寸的連結樣式按鈕 -->
   <button type="button" class="btn btn-link">Link</button>
@@ -36,15 +36,15 @@
 
 <p>可以使用 btn-outline-{情境色} 製作 outline 形式的按鈕</p>
 
-<div class="demo">
-  <button type="button" class="btn btn-練習-primary">Primary</button>
-  <button type="button" class="btn btn-練習-secondary">Secondary</button>
-  <button type="button" class="btn btn-練習-success">Success</button>
-  <button type="button" class="btn btn-練習-danger">Danger</button>
-  <button type="button" class="btn btn-練習-warning">Warning</button>
-  <button type="button" class="btn btn-練習-info">Info</button>
-  <button type="button" class="btn btn-練習-light">Light</button>
-  <button type="button" class="btn btn-練習-dark">Dark</button>
+<div class="demo bg-dark">
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-danger">Danger</button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-info">Info</button>
+  <button type="button" class="btn btn-outline-light">Light</button>
+  <button type="button" class="btn btn-outline-dark">Dark</button>
 </div>
 
 <h2>Sizes</h2>
@@ -52,10 +52,10 @@
 <p>可以使用 btn-lg, btn-sm 製作大小類型的按鈕</p>
 
 <div class="demo">
-  <button type="button" class="btn btn-primary 練習">Large button</button>
-  <button type="button" class="btn btn-secondary 練習">Large button</button>    
-  <button type="button" class="btn btn-primary 練習">Small button</button>
-  <button type="button" class="btn btn-secondary 練習">Small button</button>    
+  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+  <button type="button" class="btn btn-secondary btn-lg">Large button</button>    
+  <button type="button" class="btn btn-primary btn-sm">Small button</button>
+  <button type="button" class="btn btn-secondary btn-sm">Small button</button>    
 </div>
 
 
@@ -64,8 +64,8 @@
 <p>button 標籤的按鈕可以加入 disabled 的屬性禁用按鈕</p>
 
 <div class="demo">
-  <button type="button" class="btn btn-lg btn-primary" 練習>Primary button</button>
-  <button type="button" class="btn btn-secondary btn-lg" 練習>Button</button> 
+  <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+  <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button> 
 </div>
 
 <h4>使用 <code>&lt;a&gt;</code> 元素的禁用其行為與其他按鈕略有不同：</h4>
@@ -76,8 +76,8 @@
 </ul>
 
 <div class="demo">
-  <a href="#" class="btn btn-primary btn-lg 練習" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-  <a href="#" class="btn btn-secondary btn-lg 練習" tabindex="-1" role="button" aria-disabled="true">Link</a>
+  <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+  <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
 </div>
 
 <h2>Block buttons</h2>
@@ -94,8 +94,8 @@
 <p>另一種寫法搭配使用 width: 100%</p>
 
 <div class="demo">
-  <button class="btn btn-primary 練習" type="button">Button</button>
-  <button class="btn btn-primary 練習" type="button">Button</button>
+  <button class="btn btn-primary w-100" type="button">Button</button>
+  <button class="btn btn-primary w-100 mt-2" type="button">Button</button>
 </div>
 
 <h4>以下為一個響應式的範例</h4>
@@ -103,7 +103,7 @@
 <p>行動版為滿寬，桌面版為單行</p>
 
 <div class="demo">
-  <div class="練習">
+  <div class="d-grid gap-2 d-md-block">
     <button class="btn btn-primary" type="button">Button</button>
     <button class="btn btn-primary" type="button">Button</button>
   </div>
@@ -112,7 +112,7 @@
 <h4>可以使用網格系統的欄 (column) 類別來調整區塊級別按鈕的寬度（加入 col-6）</h4>
 
 <div class="demo">
-  <div class="d-grid gap-2 練習 mx-auto">
+  <div class="d-grid gap-2 col-6 mx-auto">
     <button class="btn btn-primary" type="button">Button</button>
     <button class="btn btn-primary" type="button">Button</button>
   </div>
@@ -123,9 +123,9 @@
 <p>加入 <code>data-bs-toggle="button"</code> 來切換按鈕的 <code>active</code> 狀態。</p>
 
 <div class="demo">
-  <button type="button" class="btn btn-primary" 練習 autocomplete="off">Toggle button</button>
-  <button type="button" class="btn btn-primary active" 練習 autocomplete="off" aria-pressed="true">Active toggle button</button>
-  <button type="button" class="btn btn-primary" disabled 練習 autocomplete="off">Disabled toggle button</button>
+  <button type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+  <button type="button" class="btn btn-outline-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+  <button type="button" class="btn btn-outline-primary" disabled data-bs-toggle="button" autocomplete="off">Disabled toggle button</button>
 </div>
 
 <!-- 🙇🙇練習結束🙇🙇 -->

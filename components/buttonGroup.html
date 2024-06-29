@@ -7,7 +7,7 @@
 <p>使用 btn-group 為多個按鈕加入群組</p>
 
 <div class="demo">
-  <div class="練習" role="group" aria-label="Basic example">
+  <div class="btn-group" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-primary">Left</button>
     <button type="button" class="btn btn-primary">Middle</button>
     <button type="button" class="btn btn-primary">Right</button>
@@ -20,9 +20,9 @@
 
 <div class="demo">
   <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-    <button type="button" class="btn 練習">Left</button>
-    <button type="button" class="btn 練習">Middle</button>
-    <button type="button" class="btn 練習">Right</button>
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Middle</button>
+    <button type="button" class="btn btn-danger">Right</button>
   </div>
 </div>
 
@@ -32,9 +32,9 @@
 
 <div class="demo">
   <div class="btn-group" role="group" aria-label="Basic outlined example">
-    <button type="button" class="btn btn-練習-primary">Left</button>
-    <button type="button" class="btn btn-練習-primary">Middle</button>
-    <button type="button" class="btn btn-練習-primary">Right</button>
+    <button type="button" class="btn btn-outline-primary">Left</button>
+    <button type="button" class="btn btn-outline-primary">Middle</button>
+    <button type="button" class="btn btn-outline-primary">Right</button>
   </div>
 </div>
 
@@ -51,8 +51,8 @@
 
 <div class="demo">
   <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-    <input type="checkbox" class="練習" 練習 autocomplete="off">
-    <label class="btn btn-outline-primary" 練習>Checkbox 1</label>
+    <input type="checkbox" class="btn-check" id="btn-check1" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btn-check1">Checkbox 1</label>
     
     <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
     <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
@@ -80,7 +80,7 @@
 <p>btn-toolbar 可以包含多個 btn-group</p>
 
 <div class="demo">
-  <div class="練習" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
     <div class="btn-group me-2" role="group" aria-label="First group">
       <button type="button" class="btn btn-primary">1</button>
       <button type="button" class="btn btn-primary">2</button>
@@ -110,13 +110,13 @@
       <button type="button" class="btn btn-outline-secondary">3</button>
       <button type="button" class="btn btn-outline-secondary">4</button>
     </div>
-    <div class="練習">
+    <div class="input-group">
       <div class="input-group-text" id="btnGroupAddon">@</div>
       <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
     </div>
   </div>
   <!-- .btn-toolbar 也是 flex 結構，可以使用 flex 語法進行對齊調整 -->
-  <div class="btn-toolbar 練習" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
     <div class="btn-group" role="group" aria-label="First group">
       <button type="button" class="btn btn-outline-secondary">1</button>
       <button type="button" class="btn btn-outline-secondary">2</button>
@@ -134,7 +134,7 @@
 <h6>只需要在每個帶有 <code>.btn-group</code> 的元件加上 <code>.btn-group-{lg, sm}</code> 即可</h6>
 
 <div class="demo">
-  <div class="btn-group 練習 my-1" role="group" aria-label="Sizing example">
+  <div class="btn-group btn-group-sm my-1" role="group" aria-label="Sizing example">
     <button type="button" class="btn btn-outline-dark">Left</button>
     <button type="button" class="btn btn-outline-dark">Middle</button>
     <button type="button" class="btn btn-outline-dark">Right</button>
@@ -146,7 +146,7 @@
     <button type="button" class="btn btn-outline-dark">Right</button>
   </div>
   <br>
-  <div class="btn-group 練習 my-1" role="group" aria-label="Sizing example">
+  <div class="btn-group btn-group-lg my-1" role="group" aria-label="Sizing example">
     <button type="button" class="btn btn-outline-dark">Left</button>
     <button type="button" class="btn btn-outline-dark">Middle</button>
     <button type="button" class="btn btn-outline-dark">Right</button>
@@ -161,7 +161,7 @@
     <button type="button" class="btn btn-primary">1</button>
     <button type="button" class="btn btn-primary">2</button>
     
-    <div class="練習" role="group">
+    <div class="btn-group" role="group">
       <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
       Dropdown
       </button>
@@ -177,7 +177,7 @@
 <p>加入 .btn-group-vertical 將一組按鈕垂直堆疊而不是水平呈現。<b>此處不支援分割下拉式功能表</b>。</p>
 
 <div class="demo">
-  <div class="練習">
+  <div class="btn-group-vertical">
     <button type="button" class="btn btn-dark">Button</button>
     <button type="button" class="btn btn-dark">Button</button>
     <button type="button" class="btn btn-dark">Button</button>
@@ -188,7 +188,7 @@
 </div>
 
 <div class="demo">
-  <div class="練習">
+  <div class="btn-group-vertical">
     <button type="button" class="btn btn-primary">Button</button>
     <button type="button" class="btn btn-primary">Button</button>
     <div class="btn-group" role="group">
@@ -233,7 +233,7 @@
 </div>
 
 <div class="demo">
-  <div class="練習">
+  <div class="btn-group-vertical">
     <input type="radio" class="btn-check" name="btnradio" id="btnradioVertical1" autocomplete="off" checked>
     <label class="btn btn-outline-danger" for="btnradioVertical1">Radio 1</label>
     
